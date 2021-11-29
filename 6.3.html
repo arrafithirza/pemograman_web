@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            
+        }
+        body{
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            margin: 1;
+            background-color: pink;
+            text-align: center;
+            padding: 10px;
+        }
+        #main{
+            display: flex;
+            flex: 1;
+            padding: 10px;
+        }
+        #main > nav{
+            background-color: #03DAC5;
+            order: 1;
+            flex: 0.2;
+            
+        }
+        #main > article{
+            background-color: white;
+            order: 2;
+            flex: 0.9;
+            margin-left: 50px;
+        }
+        article  img{
+            width: 300px;
+            padding: 50px;
+            ;
+        }
+        header,footer{
+            background-color: khaki;
+            height: 10vh;
+        }
+        header,footer,nav,article{
+            padding: 1em;
+        }
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <div id="main">
+        <nav>Nav</nav>
+        <article> <img src="IMG_0985.JPG" alt="foto"><img src="IMG_0985.JPG" alt=""><img src="IMG_0985.JPG" alt=""></article>
+    </div>
+    <footer>Footer</footer>
+</body>
+</html>
